@@ -18,7 +18,7 @@ const Products = () => {
 
         })
 
-    }, []);
+    }, [setLoading,setProdutos]);
 
 
 
