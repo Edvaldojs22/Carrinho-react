@@ -11,6 +11,9 @@ const SearchBar = () => {
 
     return (
         <form className='search-bar'>
+            <button type="submit" className="search_button">
+                <BsSearch />
+            </button>
             <input
                 type="search"
                 value={valorInput}
@@ -19,13 +22,13 @@ const SearchBar = () => {
                 required
                 onChange={({ target }) => setValorIpunt(target.value)}
             />
-            {valorInput}
-            <button type="submit" className="search_button">
-                <BsSearch />
-            </button>
+
         </form>
+
     );
 
 }
+
+
 
 export default SearchBar;

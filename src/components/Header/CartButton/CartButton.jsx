@@ -6,7 +6,7 @@ const CartButton = () => {
 
         <button type="buttton" className="cart_button">
             <GiShoppingCart/>
-            <spana className= "cart_status">1</spana>
+            <span className= "cart_status">1</span>
         </button>
     );
 }

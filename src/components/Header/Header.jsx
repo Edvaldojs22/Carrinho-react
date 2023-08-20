@@ -3,6 +3,7 @@ import './Header.css';
 import CartButton from "./CartButton/CartButton";
 
 const Header = () => {
+    
     return (
         <header className="header">
             <div className="container">
