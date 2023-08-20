@@ -1,17 +1,20 @@
 import fetchProdutos from '../../../api/fetchProducos';
 import './Products.css'
-import { useState, useEffect } from 'react';
+import {useEffect,useContext} from 'react';
 import ProductCard from '../ProductCard/ProductCard';
+import Loading from '../Loading/Loading';
+import AppContext from '../../../context/AppContext';
 
 
 const Products = () => {
 
-    const [produtos, setProdutos] = useState([]);
+    const{produtos, setProdutos, loading, setLoading} = useContext(AppContext);
 
     useEffect(() => {
 
         fetchProdutos('smartphone').then((resposta) => {
-            setProdutos(resposta)
+            setProdutos(resposta);
+            setLoading(false)
 
         })
 
@@ -20,14 +23,10 @@ const Products = () => {
 
 
     return (
-        <section className="products container">
-
-            {
-                produtos.map((produto) => <ProductCard key={produto.id} data={produto} />)
-            }
-
-        </section>
-    );
+        (loading && <Loading />) || (
+        <section className='products container'>
+            {produtos.map((produto) => <ProductCard key={produto.id} data={produto} />)}
+        </section>))
 }
 
 
