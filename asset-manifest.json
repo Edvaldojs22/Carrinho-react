@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Carrinho-react/static/css/main.57423643.css",
+    "main.js": "/Carrinho-react/static/js/main.de6de507.js",
+    "index.html": "/Carrinho-react/index.html",
+    "main.57423643.css.map": "/Carrinho-react/static/css/main.57423643.css.map",
+    "main.de6de507.js.map": "/Carrinho-react/static/js/main.de6de507.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57423643.css",
+    "static/js/main.de6de507.js"
+  ]
+}
