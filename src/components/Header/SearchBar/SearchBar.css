@@ -18,14 +18,14 @@
 }
 
 .search_button {
-    background-color: #ffee00;
+    background-color: #dfd10b;
    min-width: 50px;
     border: none;
     font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4b4b4b;
+    color: #000000;
     cursor: pointer;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
