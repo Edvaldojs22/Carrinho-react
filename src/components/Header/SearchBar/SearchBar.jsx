@@ -14,7 +14,6 @@ const SearchBar = () => {
         event.preventDefault(); //Serve para evitar o carregamento da pagina ao pesquisar
         setLoading(true);
         const produtos = await fetchProdutos(valorBusca);
-
         setProdutos(produtos);
         setLoading(false)
         setValorBusca('')
